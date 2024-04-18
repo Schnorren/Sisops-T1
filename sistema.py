@@ -1,5 +1,5 @@
 from instrucoes import *
-from processos import Processo
+from Processo import Processo
 '''Classe do sistema operacional que coordena a execução dos processos
    Versão: 2024-04-15'''
 
@@ -8,7 +8,7 @@ class Sistema():
         self._tempo_real = []
         self._melhor_esforco = []
         self.__cont = 0 # Conta número de processos
-        print('### Ambiente inicializado ###')
+        print('--### Ambiente inicializado ###--')
     
     def cria_processo(self):
         caminho = input('Insira o código (arquivo .txt) do processo:')
